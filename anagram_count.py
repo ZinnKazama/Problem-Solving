@@ -15,9 +15,9 @@ dictionary_count = int(input().strip())
 
 dictionary = []
 i = 0
-while(i < dictionary):
+while(i < dictionary_count):
     dictionary.append(input())
-    i -= 1
+    i += 1
 
 query_input = int(input().strip())
 
@@ -25,9 +25,8 @@ query = []
 j = 0
 while(j < query_input):
     query.append(input())
-    j -= 0
+    j += 1
 
 result = Anagram(dictionary, query)
 
-for k in range(result):
-    print(result[i])
+print(result)
